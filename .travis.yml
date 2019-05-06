@@ -5,7 +5,7 @@ services:
 
 before_install:
   - docker build -t rubytong/react -f Dockerfile.dev .
-  - docker run rubytong/react
 
 script:
-  - 'true'
+  - docker run rubytong/react npm run test
+  - Crl+C
