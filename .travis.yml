@@ -8,3 +8,8 @@ before_install:
 
 script:
   - docker run rubytong/react npm run test -- --version
+
+deploy:
+  provider: elasticbeanstalk
+  region: 
+  app: 
